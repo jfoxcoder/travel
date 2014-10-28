@@ -1,0 +1,99 @@
+﻿@model ManageUsersVm
+
+@using Travel.Web.ViewModels;
+
+@{ var vm = ViewBag.LayoutVm as LayoutVm; }
+
+@Html.AdminBreadcrumbs("Users");
+
+<div class="row">
+    <header class="admin-header">
+        <h2>Manage Users</h2>
+        
+    </header>
+</div>
+
+<div class="row">
+    <div class="right"><em>Change admin status by clicking the user's admin switch.</em></div>
+    <h3>Admins</h3>
+
+    
+
+    <ul id="admin-list" class="small-block-grid-1 large-block-grid-4 user-list">
+        @foreach (var admin in @Model.Admins)
+        {
+            <li>
+                <article class="user-article" >
+                    <header>@admin.ApplicationUser.Email
+                        <i class="icon-delete right"
+                           title="Delete admin (Warning: no confirmation prompt!')"
+                           data-delete-url="@Url.RouteUrl("DeleteUser", new { id = admin.ApplicationUser.Id })"></i>
+                </header>
+                    <section>                        
+                        <div class="switch tiny admin-switch-box">
+                            <span>Admin</span>
+                            <input id="user-@admin.ApplicationUser.Id"
+                                   type="checkbox" 
+                                   checked
+                                   data-promote-url="@Url.RouteUrl("PromoteToAdmin", new {userId = @admin.ApplicationUser.Id })"
+                                   data-demote-url="@Url.RouteUrl("DemoteToUser", new {userId = @admin.ApplicationUser.Id })">
+                            <label for="user-@admin.ApplicationUser.Id">Admin</label>                            
+                        </div>
+                    </section>
+                    <footer></footer>
+                </article>
+            </li>
+        }
+    </ul>
+</div>
+
+<div class="row push-footer-down">
+    <h3>Users</h3>
+
+
+    <ul id="user-list" class="small-block-grid-1 large-block-grid-4 user-list">
+        @if (@Model.Users.Count() > 0)
+        {
+            foreach (var user in @Model.Users)
+            {
+                <li>
+                    <article class="user-article" data-user="@user.ApplicationUser.Id">
+                        <header>
+                            @user.ApplicationUser.Email
+                            <i class="icon-delete right"
+                               title="Delete user"
+                               data-delete-url="@Url.RouteUrl("DeleteUser",
+                                new { id = @user.ApplicationUser.Id })"></i>
+                        </header>
+                        <section>
+
+                            <div class="switch tiny admin-switch-box">
+                                <span>Admin</span>
+                                <input id="user-@user.ApplicationUser.Id"
+                                       type="checkbox"
+                                       data-promote-url="@Url.RouteUrl("PromoteToAdmin", new { userId = @user.ApplicationUser.Id })"
+                                       data-demote-url="@Url.RouteUrl("DemoteToUser", new { userId = @user.ApplicationUser.Id })">
+                                <label for="user-@user.ApplicationUser.Id">Admin</label>
+                            </div>
+                        </section>
+                    </article>
+                </li>
+            }
+        }
+        else
+        {
+            <li><em>@vm.WebsiteName has no users!</em></li>
+        }
+    </ul>
+
+</div>
+
+
+
+
+
+@section scripts {
+
+    @Scripts.Render("~/Scripts/joseph/users.js")
+    
+}

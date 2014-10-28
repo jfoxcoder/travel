@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Travel.Web.ViewModels.AdminCountryVm>
+
+@Html.AdminBreadcrumbs("Countries")
+
+<div class="row">
+    <header class="admin-header">
+        <h2>Manage Countries</h2>
+
+        <a href="@Url.RouteUrl("CountryCreate")"
+           title="Create Country">
+            <span class="icon-add"></span>
+        </a>
+    </header>
+</div>
+
+<div class="row push-footer-down">
+    
+
+    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+        @foreach (var countryVm in Model)
+        {            
+            <li class="admin-model-item" data-jf-toolbar-owner>
+                <header>
+                    <h4>
+                        <i class="@countryVm.FlagClass" title="@countryVm.Name"></i>
+                        <a href="@Url.RouteUrl("CountryEdit", new { id = countryVm.Id })" class="" title="Edit @countryVm.Name">@Html.DisplayFor(modelItem => countryVm.Name)</a>
+                    </h4>
+                    <ul class="jf-toolbar">
+                        <li><a href="@Url.RouteUrl("CountryEdit", new { id = countryVm.Id })" class="" title="Edit @countryVm.Name"><span class="icon-edit"></span></a></li>
+
+                        <li><a href="@Url.RouteUrl("CountryDelete", new { id = countryVm.Id })" class="" title="Delete @countryVm.Name"><span class="icon-delete"></span></a></li>
+
+                        <li>
+                            <a href="@Url.RouteUrl("DestinationCreate", new { country = countryVm.Id })"
+                                class="" 
+                               title="Add Destination to @countryVm.Name">
+                                <span class="icon-location"></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </header>
+                <section>
+                    <ul class="inline-list">
+                        @foreach(var d in @countryVm.AdminDestinationVms)
+                        {
+                            @*<li>@Html.RouteLink(d.Name, "DestinationEdit ", new { @id = d.Id })</li>*@
+
+                            <li>
+                                <a href="@Url.RouteUrl("DestinationEdit", new { @id = d.Id })" title="@d.Title">
+                                    @d.Name
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </section>
+            </li>
+        }
+    </ul>
+
+
+</div>
+
+@section scripts {
+    @Scripts.Render("~/Scripts/joseph/jf-toolbar.js")
+}

@@ -1,0 +1,22 @@
+﻿@model Travel.Web.ViewModels.SortsVm
+
+
+
+    <dl id="sorter" class=" sub-nav  hide-for-small">
+        <dt style="text-transform: none;">Sort by:</dt>
+        @foreach (var s in Model.SortVms)
+        {
+            <dd class="@s.ActiveCssClass" data-sort="@s.Name"><a href="@s.Href(Model.Url)">@s.Name</a></dd>
+        }
+    </dl>
+    <div class="sort-dropdown show-for-small-only">
+        <span>Sort by</span><a href="#" class="button" data-dropdown="drop">@Model.ActiveSortName &raquo;</a>
+        <ul id="drop" class="tiny f-dropdown" data-dropdown-content>
+            @foreach (var s in Model.SortVms)
+            {
+                <li><a href="@s.Href(Model.Url)">@s.Name</a></li>
+            }
+        </ul>
+    </div>
+
+

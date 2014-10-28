@@ -1,0 +1,53 @@
+﻿@model Travel.Web.ViewModels.RegisterViewModel
+
+
+<div class="row push-footer-down">
+    <div class="columns small-10 small-centered medium-5 medium-centered large-4 large-centered ">
+
+        @using (Html.BeginRouteForm("AttemptRegister", FormMethod.Post, new { @class = "", role = "form" }))
+        {
+            @Html.AntiForgeryToken()            
+            
+            <br/>
+            <h4 class="text-center">Welcome!</h4>
+
+            <hr/>
+            
+            @Html.ValidationSummary("", new { @class = "hide" })
+            
+           <div>
+                @Html.LabelFor(m => m.Email, new { @class = "", @autofocus="autofocus" })
+                <div class="">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "", @autofocus = true })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "alert" })
+                </div>
+            </div>
+           <div>
+                @Html.LabelFor(m => m.Password, new { @class = "" })
+                <div class="">
+                    @Html.PasswordFor(m => m.Password, new { @class = "" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "alert" })
+                </div>
+            </div>
+           <div>
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "" })
+                <div class="">
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "" })
+                    @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "alert" })
+                </div>
+            </div>
+           <div>
+                <div class="text-center">
+                    <input type="submit" class="button success expand round" value="Sign up" />
+                </div>
+            </div>
+        }
+
+      
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/joseph/flash-message-validation.js")
+}

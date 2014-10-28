@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Travel.Web.ViewModels.DestinationVm>
+
+@Html.AdminBreadcrumbs("Destinations")
+
+<div class="row">
+    <header class="admin-header">
+        <h2>Manage Destinations</h2>
+
+        <a href="@Url.RouteUrl("DestinationCreate")"
+           title="Create Destination">
+            <span class="icon-add"></span>
+        </a>
+    </header>
+</div>
+
+<div class="row">
+    
+
+    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+        @foreach (var item in Model)
+        {            
+            <li class="admin-model-item" data-jf-toolbar-owner>
+
+
+
+                @*<h3>@Html.DisplayFor(modelItem => item.Name) <small>@Html.DisplayFor(modelItem => item.Country.Name)</small></h3>*@
+
+
+
+                <header>
+                    <h3>
+
+                        <a href="@Url.RouteUrl("DestinationEdit", new { id= item.Id })" class="" title="Edit @item.Name, @item.Destination.Country.Name">@Html.DisplayFor(modelItem => item.Name)</a>
+                    </h3>
+                    <ul class="jf-toolbar">
+                        <li><a href="@Url.RouteUrl("DestinationEdit", new { id= item.Id })" class="" title="Edit @item.Name, @item.Destination.Country.Name"><span class="icon-edit"></span></a></li>
+
+                        <li><a href="@Url.RouteUrl("DestinationImages", new { id= item.Id })" class="btn btn-default" title="Edit Images for @item.Name, @item.Destination.Country.Name"><span class="icon-images"></span></a></li>
+
+                        <li><a href="@Url.RouteUrl("DestinationDelete", new { id= item.Id })" class="btn btn-danger" title="Delete @item.Name, @item.Destination.Country.Name"><span class="icon-delete"></span></a></li>
+                    </ul>
+
+                </header>
+                <section class="markdown">@Html.Markdown(item.DescriptionExcerpt)</section>
+            </li>
+        }
+    </ul>
+
+
+</div>
+
+@section scripts {
+    @Scripts.Render("~/Scripts/joseph/jf-toolbar.js");
+}

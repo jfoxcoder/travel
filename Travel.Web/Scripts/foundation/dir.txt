@@ -1,0 +1,29 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 824A-841E
+
+ Directory of C:\Dropbox\dev\vsproj\Travel\Travel.Web\Scripts\foundation
+
+14/10/2014  05:49 p.m.    <DIR>          .
+14/10/2014  05:49 p.m.    <DIR>          ..
+14/10/2014  05:49 p.m.                 0 dir.txt
+27/09/2014  03:24 p.m.             8,370 fastclick.js
+27/09/2014  03:24 p.m.            12,133 foundation.abide.js
+27/09/2014  03:24 p.m.             2,150 foundation.accordion.js
+27/09/2014  03:24 p.m.             1,242 foundation.alert.js
+27/09/2014  03:24 p.m.            16,865 foundation.clearing.js
+27/09/2014  03:24 p.m.            10,448 foundation.dropdown.js
+27/09/2014  03:24 p.m.             2,106 foundation.equalizer.js
+27/09/2014  03:24 p.m.             9,234 foundation.interchange.js
+27/09/2014  03:24 p.m.            29,986 foundation.joyride.js
+27/09/2014  03:24 p.m.            18,431 foundation.js
+27/09/2014  03:24 p.m.             7,034 foundation.magellan.js
+27/09/2014  03:24 p.m.             5,813 foundation.offcanvas.js
+27/09/2014  03:24 p.m.            15,324 foundation.orbit.js
+27/09/2014  03:24 p.m.            14,114 foundation.reveal.js
+27/09/2014  03:24 p.m.             8,217 foundation.slider.js
+27/09/2014  03:24 p.m.             7,935 foundation.tab.js
+27/09/2014  03:24 p.m.            10,591 foundation.tooltip.js
+27/09/2014  03:24 p.m.            14,853 foundation.topbar.js
+27/09/2014  03:24 p.m.             1,393 jquery.cookie.js
+              20 File(s)        196,239 bytes
+               2 Dir(s)  15,099,883,520 bytes free

@@ -1,0 +1,241 @@
+﻿@using Travel.Web.ViewModels
+@using Travel.Web.Enums
+
+@{
+    var vm = ViewBag.LayoutVm as LayoutVm;
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="@vm.MetaDescription" />
+
+    <title>@vm.WebPageTitle</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Roboto' rel='stylesheet' type='text/css'>
+
+    @Styles.Render("~/Content/jquery.qtip.custom/jquery.qtip.min.css")
+    @Styles.Render("~/Content/css")
+
+    @RenderSection("styles", required: false)
+    @Scripts.Render("~/bundles/modernizr")
+
+
+    <link rel="shortcut icon" media="all" type="image/x-icon" href="@Url.Content("favicon.ico")" />
+</head>
+<body>
+
+
+    <header id="page-header" class="row"></header>
+
+    <div class="row">
+        <div class="contain-to-grid travel-box-shadow">
+            <nav class="top-bar" data-topbar role="navigation">
+                <ul class="title-area">
+                    <li class="name ">
+                        <h1 class="@vm.GetNavActiveClass(Nav.Home)" title="@vm.WebsiteName Home Page">
+                            <a href="@Url.RouteUrl("Home")">
+                                <i class="nav-btn-icon icon-airplane"></i>
+                            </a>
+                        </h1>
+                    </li>
+                    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                    @*<li class="@vm.GetNavActiveClass(Nav.Home)" title="@vm.WebsiteName Home Page">
+                            <a href="@Url.RouteUrl("Home")">
+                                <i class=" nav-btn-icon icon-home">
+                                </i>
+                            </a>
+                        </li>*@
+
+                    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                </ul>
+
+                <section class="top-bar-section">
+                    <!-- Session Navigation -->
+                    @if (vm.IsGuest)
+                    {
+                        <ul class="right">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <li class="@vm.GetNavActiveClass(Nav.Contact)" title="Contact @vm.WebsiteName">
+                                <a href="@Url.RouteUrl("Contact")">
+                                    <i class="nav-btn-icon icon-contact"></i>
+                                </a>
+                            </li>
+                            <li class="@vm.GetNavActiveClass(Nav.Register)" title="Join @vm.WebsiteName">
+                                <a href="@Url.RouteUrl("RegisterForm")">
+                                    <i class="nav-btn-icon icon-register"></i>
+                                </a>
+                            </li>
+                            <li class="@vm.GetNavActiveClass(Nav.Login)" title="Sign in to @vm.WebsiteName">
+                                <a id="loginLink" href="@Url.RouteUrl("login")">
+                                    <i class="nav-btn-icon icon-enter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    }
+                    else
+                    {
+
+                        using (Html.BeginRouteForm("LogOff", null, FormMethod.Post, new { id = "logoutForm" }))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <ul class="right">
+
+                                <li id="wishlist-button-item" class="@vm.GetNavActiveClass(Nav.Wishlist) ">
+                                    <a href="@Url.RouteUrl("Wishlist")" class="" title="Wishlist">
+                                        <i class="nav-btn-icon icon-wish-on"></i>
+                                    </a>
+                                </li>
+
+                                <li class="@vm.GetNavActiveClass(Nav.Contact)" title="Contact Us">
+                                    <a href="@Url.RouteUrl("Contact")">
+                                        <i class="nav-btn-icon icon-contact"></i>
+                                    </a>
+                                </li>
+
+                                <li class="has-dropdown text-center right-tip" title="@User.Identity.Name">
+                                    <a href="#"><i class="nav-btn-icon icon-user"></i></a>
+                                    <ul class="dropdown">
+                                        @if (vm.IsAdmin)
+                                        {
+                                            <li title="Admin Area" class="right-tip">
+                                                <a href="@Url.RouteUrl("AdminHome")">
+                                                    <i class="nav-btn-icon icon-admin"></i>
+                                                </a>
+                                            </li>
+
+                                        }
+                                        <li title="Sign out" class="right-tip">
+                                            <a href="javascript:document.getElementById('logoutForm').submit()">
+                                                <i class="nav-btn-icon icon-exit"></i>
+                                            </a>
+                                        </li>
+                                        @*<li title="Sign out" class="">
+                                                <a href="javascript:document.getElementById('logoutForm').submit()">
+                                                    <i class="nav-btn-icon icon-admin"></i>
+                                                </a>
+                                            </li>*@
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        }
+                    }
+
+                    <!-- Destinations Navigation -->
+                    <ul class="left">
+                        @* destinations item *@
+                        <li class="has-dropdown">
+                            <a href="#">Destinations</a>
+                            <ul class="dropdown">
+                                @foreach (var country in vm.NavDestinations)
+                                {
+                                    <li class="has-dropdown">
+                                        <a href="@Url.RouteUrl("DestinationsByCountry", new { country = country.Slug })">
+                                            <i class="@country.FlagClass" title="@country.LinkText"></i> @country.LinkText
+                                        </a>
+
+
+
+
+
+
+                                        <ul class="dropdown">
+                                            @foreach (var destination in country.NavDestinations)
+                                            {
+                                                <li>@Html.DestinationLink(destination)</li>
+                                            }
+                                        </ul>
+                                    </li>
+
+
+                                }
+                            </ul>
+                        </li>
+
+                        @if (@vm.HasSort)
+                        {
+                            <li class="has-dropdown">
+                                <a href="#" class="" title="Sorting by @vm.SortsVm.ActiveSortName">Sort</a>
+                                <ul class="dropdown">
+                                    @foreach (var s in vm.SortsVm.SortVms.Where(s => !s.Active))
+                                    {
+                                        <li class="@s.ActiveCssClass"><a href="@s.Href(vm.SortsVm.Url)">@s.Name</a></li>
+                                    }
+                                </ul>
+                            </li>
+                        }
+
+                        @* Text Search is not implemented yet *@
+                        @*@if (@vm.HasFind)
+                        {
+                            <li class="has-form">
+                                <form action="@Url.RouteUrl("FindDestinations")" method="get">
+                                    <div class="row collapse">
+                                        <div class="large-8 small-9 columns">
+                                            <input id="terms"
+                                                   name="terms"
+                                                   type="text"
+                                                   placeholder="Find destinations..."
+                                                   value="Sydney australia"
+                                                   data-url="@Url.RouteUrl("FindDestinations")">
+                                        </div>
+                                        <div class="large-4 small-3 columns">
+                                            <input id="submit"
+                                                   name="submit"
+                                                   type="submit"
+                                                   class="alert button expand"
+                                                   value="Find">
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        }*@
+                    </ul>
+                </section>
+            </nav>
+
+        </div>
+    </div>
+
+    <div>
+        @RenderBody()
+
+        <footer id="page-footer" class="row">
+            <div class="left">&copy; @DateTime.Now.Year @vm.WebsiteName</div>
+            <div class="top-button right"><i class="icon-top" onclick="FlashMessage.scrollToSelector('body')"></i></div>
+        </footer>
+
+    </div>
+
+    <input id="homeUrl" type="hidden" name="homeUrl" value="@Url.RouteUrl("Home")" />
+
+    @* flash-boxes *@
+    <div data-alert class="alert-box alert flash-box"><i></i><br /><p></p></div>
+    <div data-alert class="alert-box alert flash-box"><i></i><br /><p></p></div>
+    <div data-alert class="alert-box alert flash-box"><i></i><br /><p></p></div>
+    <div data-alert class="alert-box alert flash-box"><i></i><br /><p></p></div>
+
+    @Scripts.Render("~/bundles/common")
+    @Scripts.Render("~/bundles/foundation")
+    @Scripts.Render("~/bundles/flash-messages")
+    @Scripts.Render("~/bundles/qtip")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

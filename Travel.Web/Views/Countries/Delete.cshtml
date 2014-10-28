@@ -1,0 +1,47 @@
+﻿@model Travel.Web.Models.Country
+
+@Html.AdminBreadcrumbs("Delete Country", "Countries", "AdminCountriesHome")
+
+@{
+    // for cascade-delete warning
+    string destinations = @Model.Destinations.Count() > 0
+        ? string.Join(", ", @Model.Destinations.Select(d => d.Name).ToArray())
+        : string.Empty;
+}
+
+<header class="row admin-header">
+    <h2>Delete @Model.Name</h2>
+</header>
+
+<div class="row push-footer-down">
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        if (!string.IsNullOrEmpty(destinations))
+        {
+            <div class="small-6 small-centered columns">
+
+            </div>
+            <div data-alert class="alert-box warning text-center">
+                The following destinations will also be deleted: <br/><strong>@destinations.</strong><br/>(Image directories will not be deleted).
+                
+            </div>
+
+
+        }
+
+        <br />
+
+        <div class="form-actions no-color">
+            <button type="submit" value="Delete" class="button alert">Confirm Delete</button>
+        </div>
+
+
+
+
+    }
+
+    @Html.BackLink("Countries", "AdminCountriesHome")
+</div>

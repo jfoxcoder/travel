@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Travel.Web.Models.Contact>
+
+@Html.AdminBreadcrumbs("Contacts")
+
+<div class="row">
+    <header class="admin-header">
+        <h2>Manage Contacts</h2>
+    </header>
+</div>
+
+@if (@Model.Count() > 0)
+{
+
+
+    <div class="row push-footer-down">
+        <div class="small-12 columns">
+            <table>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Message)
+                    </th>
+                    <th>Actions</th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr data-jf-toolbar-owner>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Phone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Message)
+                        </td>
+                        <td>
+                            <ul class="jf-toolbar">
+                                <li>
+                                    <a href="@Url.RouteUrl("DeleteContactForm", new { id = item.Id })"
+                                       title="Delete message">
+
+                                        <span class="icon-delete"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
+}
+else
+{
+<div class="row push-footer-down ">
+    <div class="small-12 columns">
+        <em>No contact messages have been received.</em>
+    </div>
+</div>
+}
+
+@section scripts {
+    @Scripts.Render("~/Scripts/joseph/jf-toolbar.js")
+}

@@ -1,0 +1,62 @@
+﻿@model Travel.Web.ViewModels.LoginViewModel
+
+<div class="row push-footer-down">
+    <div class="columns small-10 small-centered medium-5 medium-centered large-4 large-centered ">
+        <section id="loginForm">
+            @using (Html.BeginRouteForm("AttemptLogin", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "", role = "form"}))
+            {
+                @Html.AntiForgeryToken()
+<br/>
+                <h4 class="text-center">Welcome back!</h4>
+
+                <hr/>
+                
+                @Html.ValidationSummary(true, "", new { @class = "hide" })
+
+                <div class="">
+                    @Html.LabelFor(m => m.Email, new { @class = "" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "", @autofocus = true })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "alert" })
+                    </div>
+                </div>
+                <div class="">
+                    @Html.LabelFor(m => m.Password, new { @class = "" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.Password, new { @class = "" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "alert" })
+                    </div>
+                </div>
+                @*<div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <div class="checkbox">
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            @Html.LabelFor(m => m.RememberMe)
+                        </div>
+                    </div>
+                </div>*@
+                <div class="">
+                    <div class="text-center">
+                        <input type="submit" value="Sign In" class="button success expand round" />
+                    </div>
+                </div>
+                <p class="text-center">                    
+                    @Html.RouteLink("Create an account.", "RegisterForm")
+                </p>
+                @* Enable this once you have account confirmation enabled for password reset functionality
+                <p>
+                    @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                </p>*@
+            }
+        </section>
+    </div>
+    @*<div class="col-md-4">
+        <section id="socialLoginForm">
+            @Html.Partial("_ExternalLoginsListPartial", new { Action = "ExternalLogin", ReturnUrl = ViewBag.ReturnUrl })
+        </section>
+    </div>*@
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/joseph/flash-message-validation.js")
+}

@@ -1,0 +1,16 @@
+HOW TO RESET THE DATABASE 
+=========================
+
+Run the commands below in the visual studio package manager
+console to wipe the database and reseed it with test data.
+
+(To access the visual studio package manager console from the main
+menu select [View > Other Windows > Package Manager Console]).
+
+Reset user accounts
+===================
+update-database -ConfigurationTypeName Travel.Web.DataContexts.IdentityMigrations.Configuration
+
+Reset main database
+===================
+update-database -ConfigurationTypeName Travel.Web.DataContexts.TravelMigrations.Configuration

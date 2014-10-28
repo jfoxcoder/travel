@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Travel.Web.ViewModels.AdminAreaVm>
+
+<div class="row push-footer-down">
+
+    <ul class="small-block-grid-2 medium-block-grid-4 text-center admin-home-block-list">
+        @foreach (var adminArea in @Model)
+        {
+            <li>
+                <article class="panel">
+                    <header><h2>@adminArea.Name</h2></header>
+                    <section><p>@adminArea.Description</p></section>
+                    <footer>
+                        @Html.RouteLink(
+                            linkText: "Manage »",
+                            routeName: @adminArea.RouteName,
+                            routeValues: null,
+                            htmlAttributes: new { @class = "button tiny success" })
+                    </footer>
+                </article>
+            </li>
+        }
+    </ul>
+
+</div>

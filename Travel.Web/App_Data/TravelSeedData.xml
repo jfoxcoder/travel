@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TravelSeedData>
+  <Countries>
+    <Country Name="New Zealand" Slug="new-zealand" IsoCode="NZ">
+      <Destinations>
+        <Destination Featured="0" Name="Northland" Slug="northland">
+          <Description>Where New Zealand began...Experience vibrant Māori culture, giant Kauri trees, unique heritage, marine paradise, hidden gems within a subtropical climate. You're never more than 40km from the coast!
+
+Enjoy exploring via our official touring route the 'Twin Coast Discovery'touring route from Auckland along the East, West &amp; Northern coastlines. Enjoy a fleeting visit or make time for a leisurely stay, Bay of Islands, Hokianga, Kauri Coast, Top of the North, Whangarei.</Description>
+        </Destination>
+        <Destination Featured="2" Name="The Coromandel" Slug="the-coromandel">
+          <Description>Renowned for its natural beauty - rural farmland, misty rainforests and pristine golden beaches, The Coromandel is blessed with hundreds of natural hideaways, making it an ideal place to escape, relax and unwind.
+Plan your travel on the official travel site for The Coromandel and discover why this destination is good for your soul.</Description>
+        </Destination>
+        <Destination Featured="1" Name="Auckland" Slug="auckland">
+          <Description>Improbably strung across a series of volcanoes, and punctuated by islands of green, Auckland is one of the most beautiful cities in the world. It is also extraordinary for the diversity of its population, with one-third of its residents born overseas. This makes it a genuine cultural melting pot and the most vibrant city in New Zealand.
+
+For unparalleled beauty, consider Auckland’s natural assets. Framed by the summit of Maungawhau (Mt Eden), it is surrounded by the sweeping expanse of Waitematā Harbour to the north-west, with the distinctive cone of Rangitoto Island and the islands of the inner Hauraki Gulf to the north-east. On a clear day, Little Barrier (Hauturu) and Great Barrier (Aotea) islands and the Coromandel Peninsula shimmer in the distance.
+
+Thanks to its location on a narrow isthmus, Auckland’s districts weave around bays and harbours, so you’re never far from the water. In fact, the intricate series of inlets and creeks means that most residents live within 5km (2 miles) of the sea. In total, Auckland and its surroundings are blessed with over 1,600km (994 miles) of unpolluted coastline featuring glorious beaches. If you fancy a dip, head to Mission Bay, Takapuna or Devonport, while there are good surfing spots at Pihi and Muriwai. Considering these facts, it’s no surprise then that the city is obsessed with sailing, with more boats per capita in Auckland than any other city in the world, earning it the moniker ‘City of Sails’.
+
+Aside from its natural assets, Auckland is the country’s most culturally diverse city, home to a significant Polynesian, Asian and Maori community, who made up around 44% of the population in 2006. This diversity is reflected in Auckland’s eclectic restaurants serving quality Pacific Rim cuisine (fish and seafood here is divine) and its shops. Despite the fact that it’s the country’s largest city, it’s surprisingly small and has a village-like ambience.
+
+From its vibrant, regenerated waterfront and ever-expanding Downtown district to its hip suburbs with their Edwardian and Victorian delights, Auckland teems with delights. And its manmade attractions are equally compelling. Check out the iconic Sky Tower, New Zealand’s tallest building, where visitors can drink in breathtaking views from a height of 328m (1,076ft).
+
+Or visit the superb Auckland Museum, housed in an impressive Greco-Roman style building, dedicated to telling the story of New Zealand, its place in the Pacific and its people. It is particularly renowned for its Maori and Pacific collections. Make a detour to swoop over Auckland’s Harbour Bridge. Although lacking the resonance of its Sydney counterpart, it is an important part of the city’s history and offers spectacular harbour views for daredevils willing to bungee jump into the harbour.
+
+And when you want to escape the urban jungle, head out to the unspoilt Waitakere Ranges, a chain of hills lying 25 km (14 miles) from the city to the west, where you’ll discover traditional Maori carvings, black-sand beaches and kauri forests.
+
+With such bountiful attractions, it’s no wonder that thousands of foreign students every year head to Auckland to make the city their home. Follow their lead and pay a visit – you won’t regret it.</Description>
+        </Destination>
+        <Destination Featured="0" Name="Hamilton" Slug="hamilton">
+          <Description>The city of Hamilton is located on the banks of the mighty Waikato River, which is best appreciated from one of the scenic riverside walks or boat cruise. The visually stunning Hamilton Gardens are webbed by paths that journey through a gallery of themed gardens from grand Italy to tranquil Asia. Other city highlights include the Waikato Museum and the Hamilton zoo, which provides native birds with enormous freedom in a walk-through free flight aviary. The Zoo also offers visitors 'Face2Face' encounters with exotic animals.
+
+Hamilton's central precinct is easy to walk and packed with cafes, restaurants, a casino and bars where you can wine, dine and dance the night away. The city is also well known as a destination for national and international events from sporting matches such as rugby, cricket, netball, rowing and boxing to concerts and festivals. Annual events such as the National Agricultural Fieldays and Balloons over Waikato festival draw crowds from far and wide.</Description>
+        </Destination>
+        <Destination Featured="1" Name="Bay of Plenty" Slug="bay-of-plenty">
+          <Description>When James Cook arrived in 1769, he anchored off a great bay ‘full of plantations and villages’ that was, he noted ‘a bay of plenty’. The Bay of Plenty, New Zealand, is no less plentiful today. Around Tauranga are hectares of orchards and gardens producing everything from kiwifruit and citrus fruit to avocados. Add to this bounty the local wines and the plentiful fresh seafood and you just know that this is a place where you will dine well. 
+          
+Mount Maunganui, a short distance from Tauranga, has spectacular beaches which are a magnet for surfers all year round and voted New Zealand's best by TripAdvisor. For the adventurous, there’s skydiving and for those more keen on terra firma, blokarting (small land yachts) will blow the cobwebs away.
+          
+Visit White Island – a quick helicopter ride from Whakatane – and you can walk, yes, on an active volcano as it hisses, belches and rumbles. It’s that same geothermal activity that provides the hot pools and spas that you will find in many places where you can relax and let the world slide by. There is plentiful accommodation in the area; everything from bed and breakfasts through to hotels and boutique lodges.</Description>
+        </Destination>
+        <Destination Featured="2" Name="Rotorua" Slug="rotorua">
+          <Description>Rotorua is one place where the turbulent forces that formed New Zealand are most evident. This city, on the Volcanic Plateau, has one of the world’s most lively fields of geothermal activity and sits squarely on the Pacific Rim of Fire.
+
+Rotorua, New Zealand, is also the ancestral home of the Te Arawa  people who settled here more than 600 years ago and their presence offers the visitor numerous cultural experiences. Try a hangi feast cooked in the steaming ground, take a tour of an authentic pre-European Māori village or treat yourself to an indulgent spa therapy. 
+
+If adventure is your thing, Rotorua has many attractions to get the adrenalin flowing; everything from skydiving and luging to zorbing and ziplining. You'll find the highest commercially rafted waterfall in the world here - the 7-metre drop at Tutea Falls is a one-of-a-kind experience. In addition, Rotorua is home to one of New Zealand’s best mountain bike circuits.
+
+It’s also a big trout fishing area with fishing on the lakes and tributary rivers and if you’re unlucky there you can sight some of the huge trout (but, alas, not catch them) at Rainbow and Fairy Springs. With its international airport, Rotorua is also the gateway to the North Island’s skifields for excellent skiing and snowboarding at Mt Ruapehu in the winter.
+
+Wind down afterwards with an exploration of the area by foot. Canopy tours by day or night offer a spectacular perspective of the native forest below, while the newly opened Tarawera Trail circles the lake it's named after, passing historic sites, giant ferns and and rippling streams. And be sure to sample some local kai; start at the revamped alfresco area of 'Eat Streat', where you can bask in the geothermal heat year-round - outdoor dining at its finest.</Description>
+        </Destination>
+        <Destination Featured="0" Name="Eastland" Slug="eastland">
+          <Description>In this relaxed and tucked-away part of the country, the world moves slowly; horses and bare feet are common forms of transport. You might wish to take a car but you’ll also want to take your time.
+
+Drive along the Pacific Coast Highway and Maori culture is evident in every settlement you see. There are carved meeting houses, beautifully painted Maori churches, and conversations in Te Reo. Venture up Mount Hikurangi, the sacred mountain of the Ngati Porou people, and you'll see giant carvings of figures from Maori folklore.
+
+Deep in the misty Te Urewera Ranges, descendants of the ‘Children of the Mist’, the ancient Tuhoe tribe, still live in harmony with the forest around the village of Ruatahuna. You’re unlikely to come across them if you go hiking in Te Urewera National Park, but hire a local guide and you’ll learn some of their stories and legends while exploring the largest untouched native forest in the North Island.</Description>
+        </Destination>
+        <Destination Featured="4" Name="Lake Taupo" Slug="lake-taupo">
+          <Description>It was created nearly two thousand years ago by a volcanic eruption so big it darkened the skies in Europe and China. Visit the Craters of the Moon and you'll see evidence of the lake's fiery birth in the geysers, steaming craters and boiling mud pools. At some of Lake Taupo's beaches, swimmers and paddlers can enjoy warm, geothermal water currents.
+
+Just north of Lake Taupo you'll find New Zealand's most visited attraction, the magnificent Huka Falls, where more than 220,000 litres of water thunder over the cliff face every second.
+
+Taupo is a great lake for water-skiing, sailing and kayaking. The Maori rock carvings at Mine Bay, which can only be seen from the water, make for a great boat trip or kayaking excursion. The forests surrounding the lake offer hiking and mountain biking to suit all levels of experience.
+
+But what Taupo is really known for is fishing. The town of Turangi has the largest natural trout fishery in the world; this is the place to cast a line and look for the big one. Turangi also happens to provide a convenient base for exploring Tongariro National Park, whether it be walking the Tongariro Alpine Crossing (New Zealand's most popular day walk) or skiing at Whakapapa and Turoa ski fields.
+
+Great Lake Taupo is centrally located in the middle of the North Island, approximately 3 1/2 hours drive from Auckland and 4 1/2 hours drive from Wellington. There's a genuinely friendly culture here and plenty of accommodation – so why not stay awhile?</Description>
+        </Destination>
+      </Destinations>
+    </Country>
+    <Country Name="Australia" Slug="australia" IsoCode="AU">
+      <Destinations>
+        <Destination Featured="3" Name="Sydney" Slug="sydney">
+          <Description>Experience Sydney’s natural beauty and culture around Sydney Harbour and the historic Rocks. Explore famous coastal beaches such as Bondi, Bronte, Coogee and Palm Beach. Bushwalk through Sydney Harbour National Park, dine at world-class restaurants, visit the Blue Mountains. Join Sydney’s vibrant events – from Mardi Gras to the New Years Eve Fireworks.
+
+### Things to Do in Sydney
+
+Sydney’s combination of surf beaches, a sparkling natural harbour and the Sydney Opera House is irresistible. In addition to its man-made wonders, Sydney is blessed with many natural assets, such as beautiful public gardens, harbour islands and unspoilt foreshores. An excellent transport system and tailor-made tours make Sydney a joy to explore.
+
+### Sydney and Surrounds
+
+Soak up Sydney’s gorgeous harbour, seductive outdoor lifestyle and great natural beauty. Kayak under the Sydney Harbour Bridge or wave at the Opera House as you ride a ferry across the harbour to Manly. Learn to surf at Bondi Beach or swim in the calm waters of Coogee. Lose yourself in the cobblestone cul-de-sacs of The Rocks or in the markets, boutiques, cafes and pubs of Paddington. As well as a world-famous harbour and more than 70 sparkling beaches, Sydney offers fabulous food, festivals and 24-7 fun.
+
+### Three Great Days in Sydney
+
+Explore the harbour, beaches and inner-city precincts of this exuberant city. See dawn break from the top of the Harbour Bridge or the sun set on the Opera House. Fine dine along the Woolloomooloo finger wharf or experience theatre and dance along the redeveloped wharves of Walsh Bay.  Take the ferry to Manly, walk from Bondi to Bronte along the spectacular sea cliffs or relax in a beer garden with harbour views in Watsons Bay. Discover the unique character of Surry Hills, Kings Cross, Glebe, Newtown or Balmain. Spend your final day indulging at wineries, restaurants or day spas of the Hunter Valley.
+
+### The Rocks
+
+Sydney’s early convict days live on in the Rocks, a jumble of cobblestone streets and cul-de-sacs just five minutes from Circular Quay. You only have to step off the harbour foreshore to find the sandstone terraces and cottages and some of Sydney’s oldest pubs. This historic precinct also draws both visitors and locals with its museums and galleries, lively weekend markets and hotels with harbour views. The past and present collide in the best way in the Rocks, home to both ghostly tours and some of Sydney’s liveliest celebrations.
+
+### Sydney Harbour National Park
+
+Beyond its landmark buildings, Sydney Harbour National Park shelters secluded beaches, picturesque islands and rare pockets of native bushland. Swim, picnic and bushwalk along the spectacular foreshore or visit harbour islands on a ferry. Go sailing or kayaking, get up close to wildlife and discover ancient rock art and convict-built buildings. The harbour’s bays, parks and headlands are also natural grandstands for some of Australia’s biggest events, from New Year’s Eve fireworks to the Sydney to Hobart yacht race.</Description>
+        </Destination>
+        <Destination Featured="1" Name="Melbourne" Slug="melbourne">
+          <Description>Discover Melbourne’s secret laneways and rooftops, the cultural hub of Federation Square, buzzing bars, boutiques and eateries, and the iconic MCG. Experience St Kilda, the Royal Botanic Gardens, bohemian Brunswick Street and the nation-stopping excitement of the Spring Racing Carnival. Join world class events such as the Australian Grand Prix.  Day trip to the Mornington Peninsula or to Phillip Island for fairy penguins.
+
+### Things to Do in Melbourne
+
+Exploring Melbourne’s laneways is just one aspect of this diverse city. Get a cricket or football fix. Soak up art and culture. Go high-end dining or grab the best pub burger. Shop for local designer fashion or cycle the bayside. Whatever you fancy, Melbourne is a city of choices.
+
+### Melbourne and Surrounds
+
+Melbourne is a maze of hidden laneways, opulent bars, exclusive restaurants and off-the-beaten-track boutiques. Here you can soak up culture, hit the sporting grounds, taste the dynamic food and wine scene, dance til dawn or wander the parks and leafy boulevards.  Visit Federation Square, the city’s landmark cultural space, and enjoy a sunset beer on the St Kilda promenade. Shop till you drop on funky Brunswick Street or upmarket Chapel Street. Wander Southbank’s cafes, bistros and bars and get a world tour of cuisines in Carlton, Richmond and Fitzroy. Take an Aboriginal Heritage Walk through the Royal Botanic Gardens and cheer with a capacity crowd at the Melbourne Cricket Ground.
+
+### Three Great Days in Melbourne
+
+There’s no time for sleep in Melbourne, a city where culture buffs, sport nuts, fashion lovers and foodies all have their niche. Discover cafes, bars and boutiques in city laneways sprawling secretly off ordered streets. Soak up the vibrant riverside atmosphere from Southbank and visit Federation Square, where creative and café culture meet. Cruise down the Yarra and wander the lawns and lakes of the Royal Botanic Gardens. Soak up the unique energy of the city’s diverse precincts, from upmarket South Yarra to beachside St Kilda and edgy Fitzroy. Then day trip to the beaches, wineries, galleries and golf courses of the Mornington Peninsula.</Description>
+        </Destination>
+        <Destination Featured="0" Name="Brisbane" Slug="brisbane">
+          <Description>Combine art and outdoor adventure in Brisbane, where South Bank’s cultural institutions and restaurants meet riverside gardens and a lagoon. Take a paddlesteamer or ferry down the Brisbane River, abseil Kangaroo Point cliffs and bike ride through the City Botanic Gardens. Day trip to Moreton Island or add Noosa, the Sunshine Coast and the Gold Coast hinterland to your itinerary.
+
+### Things to Do in Brisbane
+
+Visit Brisbane and you’ll find a modern, vibrant city with a sunny, sub-tropical climate and unsurpassed natural beauty. Best of all, you’ll find friendly locals keen to show you around this pretty riverside city. They love their city and so will you.
+
+### Brisbane and Surrounds
+
+Laze in the lush riverside gardens of South Bank, then browse the markets and swim in its lagoon. Bike ride in the City Botanic Gardens and abseil the cliffs of Kangaroo Point. Glide down the river on a majestic paddlesteamer or take a high-speed ferry to vibrant inner-city villages like Bulimba and New Farm.  When culture cravings hit, wander the art galleries and museums, watch a performance by the Queensland Ballet, Opera or Orchestra perform or see cutting-edge theatre in the Powerhouse. In the boating hub of nearby Moreton Bay and Islands, you can swim, sea kayak, snorkel coral reefs, toboggan down the world’s tallest sand dune, hire a sail boat or tussle with a marlin.
+
+### Three Great Days in Brisbane
+
+Make the most of your holiday in Brisbane - a sunny, sophisticated capital on the winding Brisbane River. Along with lush parks and laid-back locals, this is a city with serious cultural credentials and first-class wining, dining and dancing. Shop up a sub-tropical storm on Queen Street, then check out the city’s historic buildings. Dine out along South Bank’s sandy lagoon and explore its storehouse of cultural attractions. Pick out Brisbane’s landmarks on a leisurely river cruise or from Mt Cooot-tha Lookout. Listen to live music in Fortitude Valley or lose yourself to nature in the sandy adventure</Description>
+        </Destination>
+        <Destination Featured="0" Name="Port Douglas" Slug="port-douglas">
+          <Description>Port Douglas is a short one hour drive north of Cairns along one of the most scenic coastal roads in Australia. Home to golden beaches and some of Tropical North Queensland’s most exclusive resorts, the quiet former fishing village of Port Douglas is both sophisticated and relaxed and the perfect place to escape and unwind.
+
+Stroll along Macrossan Street, the central hub of the village, and enjoy the variety of stylish restaurants, bars, cafes, boutiques, bookshops and galleries. Take advantage of designer shopping or pamper yourself at one of the luxury day spas.
+
+At one end of Macrossan Street is the magnificent palm-fringed Four Mile Beach, which is a spectacular place to enjoy the sunset. Anzac Park is located at the other end of the street, where the picturesque St Mary’s by the Sea Chapel stands and the weekly Sunday markets are held.
+
+Port Douglas also offers a family holiday filled with fun and adventure. Learn to dive, snorkel, jet-ski or water ski or go kayaking to secluded beaches. Cruises to the Great Barrier Reef depart daily from the Marina Mirage, visiting sites considered to be among the best and most pristine on the reef. Visit the Low Isles on a sailboat; or spend a few days on a luxury yacht cruising to the outer reefs. Fly over the whole stunning panorama on a helicopter or sea plane scenic flight.
+
+For a once in a lifetime experience, go swimming and diving with inquisitive dwarf minke whales in June and July; or view the spectacular annual coral spawning in November.
+
+Port Douglas is also close to the Daintree National Park, where the coral reef meets the rainforest. Mossman Gorge, one of the most visited spots in the Daintree rainforest, is located just a 20 minute drive north of Port Douglas. Go crocodile spotting on the Daintree River or explore the pristine beaches of Cape Tribulation by 4WD. If you’re brave, take a flashlight and take a guided night walk through the jungle. That’s the time when the animals are at their most active and the forest really comes to life.
+
+The wettest months of the year in Port Douglas are from February to April. Although wet, it brings relief from the humidity and the rainforests are spectacular with waterfalls in full flow.
+
+North of Port Douglas, the coastal drive leads to Cooktown and the remote Cape York Peninsula.
+
+Most visitors reach Port Douglas through Cairns International Airport. You can transfer to Port Douglas by coach, private limousine or rent a car.</Description>
+        </Destination>
+        <Destination Featured="1" Name="Hobart" Slug="hobart">
+          <Description>Uncover Hobart’s food, wine, and eclectic creativity at the galleries, bars and restaurants of MONA. Relax, eat and visit the weekend markets at the convict-built harbour and sandstone Salamanca Place. Visit Hobart’s oldest suburb of Battery Point, climb Mount Wellington, and join celebrations for the Taste Tasmania festival and Sydney to Hobart Yacht Race. Hobart offers access to Richmond, Kettering, Bruny Island, Wineglass Bay and Tasmania’s national parks.
+
+### Things to Do in Hobart
+
+Hobart is a compact city, oozing with both modern and historic charm. Wander through colonial architecture and take in the vibrant energy of the creatives who choose to live here. Find pristine nature and artisanal produce, daring modern art and hip bars and restaurants. Hobart is a very special place. Tap into its eclectic magic.
+
+### Hobart and Surrounds
+
+Don’t miss this small, scenic capital, famous for its Georgian buildings and crisp air.  Browse bustling Salamanca Market and run your hands over the sandstone buildings in Salamanca Place. Climb craggy Mount Wellington for sweeping views over Hobart and the wide Derwent River. Do a ghost tour in Battery Point, walk across Australia’s oldest bridge in Richmond and visit the cute coastal hamlet of Kettering. Wind past forest and farmland to the cool-climate wineries of the Coal Valley.  See bright spinnakers on the water and dine on fresh seafood from one of Hobart’s waterside restaurants.
+
+
+### Three Great Days in Hobart
+
+Soak up sea air, creative culture and colonial history in Hobart, which sits on the wide Derwent River, in the shadow of craggy Mount Wellington. Walking is the best way to see the city’s sandstone and waterways, from bustling Salamanca Market to the fishing docks. Stop to taste Hobart’s fabulous food and wine in the cobblestone streets of Salamanca Place or along North Hobart’s restaurant strip. Explore Mount Wellington on mountain bike or foot or kayak past the city’s wharves at twilight. Just south of the city lies Kettering and small, rugged Bruny Island. Spend a day walking its windswept beaches, emerald countryside and dramatic cliff tops.</Description>
+        </Destination>
+        <Destination Featured="0" Name="Cessnock" Slug="cessnock">
+          <Description>Cessnock is located two hours north of Sydney in the Hunter Valley. Originally a service town for travellers and farmers, its growth was due to the establishment of mining in the region. Enjoy wine tastings in nearby Pokolbin, one of New South Wales' most vital winemaking areas and at the vineyards of the Lower Hunter Valley. The town has a number of fine restaurants, guesthouses and galleries. Visit The Convict Trail, a conservation project that is restoring the convict-built Great North Road. Or enjoy the Marthaville Arts and Crafts Centre and the nearby historic town of Wollombi.</Description>
+        </Destination>
+      </Destinations>
+    </Country>
+    <Country Name="France" Slug="france" IsoCode="FR">
+      <Destinations>
+        <Destination Featured="4" Name="Paris" Slug="paris">
+          <Description>To visit Paris is to visit one of the greatest cities in the world. In fact, many would say that a visit to Paris serves as a crash course in how to live. People don’t rush lunch. Children are doted upon. Hairdressers are always busy. And although you can’t take Paris with you, when you return home, that sense of how to live will linger.
+
+Stroll along the banks of the Seine and take in the view of the Eiffel Tower, the Louvre and Notre Dame. Stand on the Arc de Triomphe to see the leaf-lined avenues of the city spread out before you. Lose yourself in the narrow streets of Montmartre and challenge yourself at the modern Centre Pompidou.
+
+Indulge yourself in culinary ecstasy. From light and flaky croissants in the morning to a rich slab of foie gras in the evening, Parisians love food. From the neighbourhood bistro to the Michelin-starred restaurant, dining out in Paris is a joy. For the genuine foodie, Paris is the holy city. For the art lover, Paris is the holy city. For the lover, Paris is the holy city. And it doesn’t stop there.
+
+Paris is rich in literary history too. Inspire yourself by sipping coffee in the cafés that entertained Hemingway, Sartre, Camus and Simone de Beauvoir. Track down clues from bestselling thriller The Da Vinci Code, from the glass pyramid of the Louvre to the church of St Sulpice. Roam around Notre Dame looking for Esmeralda and keep a watchful eye out for any one of the Three Musketeers.
+
+Haggle over antiques in flea markets across town, climb the steps to the cube some call a modern monstrosity in the zone called La Defence. Party til dawn in the city’s pulsing nightclub scene and laze away afternoons in the grassy tranquil parks. Shop for spices in open air markets and scrub and soak your cares away in the magnificent hammam in the Paris Mosque.
+
+Shop for fashion in the homeland of Coco Chanel and drown in designers on the classy Rue du Faubourg Saint-Honoré. Tiptoe around the Palace of Versailles and imagine life in the time of Marie Antoinette.
+
+Celebrate the city’s scientific side at Marie Curie’s old office and think about milk at the Louis Pasteur Institute. Fill your mind with the music of Edith Piaf and the marvel of Rodin’s sculpture The Kiss. Test your stomach with the freshest steak tartare and turn people-watching into a game known as “spot the baguette”.
+
+Above all else, take the time to enjoy life. The rest of France may consider life here to be a crazy, fast-paced, wretched way to live – but to the rest of the world it’s a sweet, soothing tonic.
+
+Beauty. Romance. Good food. Fine manners. A city seduced by lanterns, awash with culture and alive with innovation and the ability to surprise. Its nickname may be the City of Lights rather than the oft-confused City of Love. But regardless of convention, Paris is a city to love. And one to return to again and again.</Description>
+        </Destination>
+        <Destination Featured="2" Name="French Riviera" Slug="french-riviera">
+          <Description>In summer the coast from St-Tropez east to Menton, also known as the French Riviera, is extremely busy, but that’s part of the fun. Most of the beaches are fabulous, and there is plenty of scope for people-watching, while lounging over a pastis on a terrace in the mostly wonderful weather. This azure-blue region has a rich artistic legacy, and the native umbrella pines sharing the landscape with acacia, eucalyptus and palm trees continue to be inspirational for modern-day artists.
+
+### Nice
+
+France’s fifth-largest city and the capital of the Côte d’Azur, Nice has been enchanting visitors since the 18th century.
+
+### Monaco
+
+Graham Greene described Monaco as ‘a sunny place for shady people’, Katherine Mansfield called it ‘Real Hell’, yet there is something irresistibly absurd about this tiny mini state.
+
+### St-Tropez
+
+At the eastern end of the Massif des Maures, St-Tropez looks north across the Golfe de St Tropez. Today this once tiny fishing village receives up to 10,000 visitors in summer, becoming a sort of Mediterranean extension of the Left Bank of Paris, with all that this implies for parking and prices.
+
+The writer Colette and other Parisians complained as early as the 1920s that “S’trop” was too crowded. Today even the yachts number in the thousands. French painters and writers had discovered it by the late 19th century and kindly recorded their findings. Paintings by these artists, some showing the unspoiled village, are in the Musée de l’Annonciade, a converted 16th-century chapel.</Description>
+        </Destination>
+      </Destinations>
+    </Country>
+    <Country Name="United States" Slug="united-states" IsoCode="US">
+      <Destinations>
+        <Destination Featured="3" Name="New York City" Slug="new-york-city">
+          <Description>Renowned for its incredible dynamism, New York is one of the world's most exciting cities. Home to venerated restaurants, chic nightspots, cutting-edge theatre and architectural masterpieces, New York City is forever on the cusp of reinvention, its creativity fuelled in no small part by immigrants who hail from every corner of the globe.
+
+The epicentre of New York City life always has been the island of Manhattan, situated on America’s east home, which is home to a fascinating jumble of neighbourhoods, each with its own distinct character. Strolling the city sidewalks is the best way to come face to face with the city in all its frenetic diversity, from the bustling, sensory-rich streets of Chinatown to the peaceful, tree-lined lanes of the West Village. North, south and east of the island, are NYC's four other boroughs - the Bronx, Brooklyn, Queens and Staten Island - all of which have their own particular attractions.
+
+New York City is packed with highlights, and it would take a lifetime to see it all. First-time visitors will want to tick off world-class attractions like the Met Museum, the Empire State Building and the Guggenheim, while those who've visited Manhattan before should explore the city's evolving urban landscape, particularly along the park-lined West Side waterfront. A venture out to the boroughs reveals a totally different dimension to the city - whether rooting for the 'Bronx Bombers' at Yankee stadium in the Bronx, feasting on Indian cuisine in Jackson Heights, Queens; or taking in the incredible nightlife in Williamsburg, Brooklyn.
+
+Visiting the city's iconic sights is only part of the appeal of this burgeoning metropolis. The shimmering lights of Broadway, the jazz clubs of downtown, the indie rock scene of Brooklyn, and highbrow cultural fare at Lincoln Center are all part of the incredibly varied cultural scene. And those more interested in shopping have much to celebrate in New York City, with an astounding collection of colourful boutiques, high-end department stores and edgy shops selling cutting-edge couture. New York City is also a dining mecca, with thousands of restaurants serving up all the world's cuisines.
+
+Although New York City still remembers the harrowing events of 11 September 2001, it has regained its vitality, and now marches forward to confront the challenges of the future. Symbolic of this was the reopening of the National September 11 Memorial on the 10th anniversary of the attack. Two giant pools, set in the footprints of the former twin towers, feature cascading waterfalls and the names of the 3,000 victims of 9/11. Overhead rises the soaring One World Trade Center, a 104-story skyscraper due for completion in 2014.
+
+Other parts of the city have also seen dramatic makeovers in recent years. Coney Island has opened newly restored amusement parks, which continue to offer high-thrill rides, while still retaining its vintage character right off the boardwalk. Further north, the Brooklyn Bridge Park is substantially expanding green space within the city, adding a series of parks, ball fields and playgrounds between the Brooklyn Bridge and Atlantic Avenue.</Description>
+        </Destination>
+        <Destination Featured="2" Name="Los Angeles" Slug="los-angeles">
+          <Description>From its laid back Pacific Ocean beaches, to Hollywood’s red carpet glamour, to its dramatic mountain backdrop, Los Angeles is a seductive, sometimes maddening, but always fascinating city.
+
+A massive cosmopolitan urban sprawl criss-crossed by frantic freeways, Los Angeles has something for everyone, if you know how to navigate its many charms.
+
+It’s the USA's second largest city after New York and has been called everything from La La Land to Tinseltown but is best known simply as LA. Sprawling along the Pacific coast of southern California, its coastline stretches 122km (76 miles) from Malibu to Long Beach. Inland, the city fills a vast, flat and once arid basin ringed by the Santa Monica and San Gabriel mountains.
+
+There is no real centre to LA – it’s a collection of small cities and suburbs that mesh seamlessly together. Hollywood offers major movie history with the Walk of Fame, the home of the Oscars, historic movie palaces and Paramount Studios. Its funky neighbour is the gay mecca of West Hollywood, which is right next door to ritzy Beverly Hills with its mansions and high-end shopping.
+
+Downtown LA is principally the business district though it also houses major museums, theatres and live music venues plus ethnic attractions like Little Tokyo and historic Olvera Street which reflects the city’s Hispanic roots.
+
+Surburban Burbank offers Universal Studios with its colourful theme park and Warner Brothers, a working studio with tours where you may spot a star or two. To the north east, the small, historic and cultured city of Pasadena is a pleasant contrast to the brashness of Hollywood.
+
+The laid back coastal cities of Santa Monica and Venice offer great shopping and dining, a chance to dip your toes in the Pacific Ocean or relax on wide sandy beaches. But LA’s close promixity to the mountains mean that in winter, skiing is an option in this sun-kissed state.
+
+Disneyland may be the city's major tourist pull, but LA is also home to world-renowned culture from the Museum of Contemporary Art to the LA Philharmonic to the LA Opera headed up by Placido Domingo, and the treasures of the Getty Museum.
+
+LA is a fascinating contradiction where zen hippy health fanatics seeking to find themselves exist happily alongside some of the most glamorous and wealthy people in the world, seeking fame and fortune. Most visitors come to enjoy world-class shops and restaurants, lie on beaches bathed in almost constant sunshine and simply to people-watch in Beverly Hills or zany Venice Beach.
+
+Like any major city, LA has its less rosy side with homelessness most apparent in parts of Hollywood, Downtown and Venice Beach. You may not want to be reminded of social problems when you’re on vacation, but you’re unlikely to feel threatened in any way.
+
+If the USA is a melting pot, L.A is a scrumptious salad with some expected ingredients but many refreshing surprises. Keep an open mind and embrace all this City of Angels has to offer and you won’t be disappointed.</Description>
+        </Destination>
+        <Destination Featured="0" Name="Hawaii" Slug="hawaii">
+          <Description>Bestowed with stunning beaches, dramatic mountains, pristine rainforests and a rich cultural heritage, Hawaii exceeds expectations as a tropical paradise.The island group of Hawaii lies 3,860km (2,400 miles) off mainland USA, comprised of 132 islands and atolls. 
+
+The state of Hawaii consists of eight islands, of which seven are inhabited and six allow visitors. Honolulu, the capital, sits on the southern shores of Oahu, the most commercialised island, but Hawaii is the largest island. Oahu has two diagonal mountain ranges and many beautiful waterfalls.
+
+The islands support rainforest, green flatlands and 13 climatic regions.The tropical paradise of Hawaii is separated from mainland USA by around 3,700km (2,300 miles) of Pacific Ocean. It has an ethnically diverse population and a rich Polynesian heritage. When Captain James Cook landed here in the 18th century, Oahu had been untouched by the west. 
+
+It achieved prominence when the volume of Honolulu's commercial traffic increased and the US Navy acquired rights to Pearl Harbor. December 7, 1941 marked the entry of the USA into WWII, when Japan bombed Pearl Harbour.</Description>
+        </Destination>
+        <Destination Featured="0" Name="San Francisco" Slug="san-francisco">
+          <Description>There are many reasons why San Francisco continuously rates as one of the most liveable cities in the USA. For starters, its residents retain a relationship between materialism and money on the one hand and cutting-edge thought, innovation and progressive politics on the other. Its relatively manageable size, aesthetics and high standards don’t hurt its reputation too much either.
+
+This dualism in San Francisco is played out in almost all facets of society: from eating, drinking and socialising to art and design, music and culture, landscape and architecture. The reward for unleashing this creative and freethinking beast on everyday activity is a dynamic lifestyle on par with New York and societal norms that are streets ahead of most other cities in the country.
+
+Granted, the discerning attitudes towards everything from dining out to theatre productions have garnered accusations of elitism – the city topped a recent high-profile list of ‘America’s Snobbiest Cities’, but there are worse crimes than having high standards, especially when those standards come not from conservative old money, but from a young, socially responsible population that just expects more than light beer and nights in watching America’s Got Talent.
+
+San Francisco is fortuitously positioned between the Pacific Ocean and Sierra Nevada mountains to the east and west and redwood forests and the California desert to the north and south. On San Francisco's doorstep, the Bay, which fits neatly in between the Golden Gate Bridge and the Bay Bridge, is not only tantalisingly beautiful, it's home to 14 small islands, including Alcatraz.
+
+The famous, glorious vineyards of the Napa and Sonoma wine regions ensure weekend escapes are part of the San Francisco experience. The wealth of world-class produce adds to the sense of high standards of living that surround residents and visitors alike here.
+
+Although the city has a mild year-round climate, it should not be confused with the common image of hot and sunny Southern California. When the fog and cold sets in, as it often does in San Francisco, locals head indoors, to jazz venues, cosy restaurants, wine bars and old-school breweries. There’s nothing like occasional inclement weather to ensure that a city has a thriving alternative arts scene.
+
+The city’s neighbourhoods all tell their own stories, from the hotbed of politics that made Haight-Ashbury what it is, to the bohemia of the Mission and the Tenderloin to the culinary wonder of Chinatown and the understated affluence of Nob Hill. The city has one of the world’s oldest and largest gay neighbourhoods in the Castro, a testament to the accepting nature and spirit of civic acceptance that exists here.
+
+Though steadfast in its bright future, the city's past is always remembered with a collective nod. The city has seen some landmark social movements take place, as diverse as the beat poetry scene to the dot com bubble. Tolerance for the individual’s way of living is perhaps what buoys San Francisco most today, and what inevitably makes it an unforgettable destination for people from all walks of life.</Description>
+        </Destination>
+        <Destination Featured="0" Name="Washington DC" Slug="washington-dc">
+          <Description>With leafy boulevards, a munificence of monuments and a clutch of museums that rank among the best in the world, Washington DC is both the USA’s political and cultural capital. But there’s more to the city than marble colossi and thrusting politicos. Behind all the marble lies a throbbing social scene, complete with some of the best clubs on the eastern seaboard, quaint little suburbs thronged with bohemian locals and green city parks that house wildlife as diverse as the city’s human population.
+
+For most, however, it is Washington DC’s abundance of monuments that make the city a must-visit; whether it’s the iconic Lincoln Memorial on whose steps Martin Luther King made his ‘I Have a Dream’ speech or the enormous Washington Monument that dominates the city skyline.
+
+Founded in 1790 as a ‘neutral’ capital, straddling the then hotly contested dividing line between north and south, Washington DC has elements of both. From the north, it takes its patrician architecture and icy winters, while from the south comes the scorching summers as well as the bonhomie that lifts a night out in Washington.
+
+Its imposing National Cathedral owes its Gothic looks to the UK, while Washington’s street plan and overall design came from the mind of a Frenchman, Pierre L’Enfant. Its history, greatly discussed on any tour of the city, also owes much to outside forces with the majority of locals happy to sit down and regale visitors with the tale of how the fledgling city was sacked and burned in 1814 by an angry regiment of British redcoats led by Major General Robert Ross. Despite his best efforts, the city survived and now thrives with barely a scar to show for it.
+
+Today, Washington is a city of buzzing suburbs, with much of the night time action happening, unusually, outside of the city centre itself. Downtown DC, home to the Capitol, the White House and the Smithsonian, is an oddly somnolent place at night, lacking the buzz of New York and only really coming alive when the Senate is in session. Nevertheless, it continues to draw visitors from all over the world, many of whom come to see its haunting war memorials: the innovative Korean War Veterans Memorial, the touching Iwo Jima bronze sculpture and the ridiculously ugly contraption sent by a grateful Netherlands following the end of World War II. Sometimes a box of chocolates really is better.
+
+The Dutch contribution to the skyline notwithstanding, DC really is a city that embraces all nationalities. The seat of American power draws all comers, a fact made plain by the imposing edifices along embassy row, and the huge variety of cuisine that dominates the restaurant scene. Oddly enough, DC is one of the best places to try Ethiopian food outside of Africa. That, however, doesn’t mean you won’t find excellent homegrown fare. Just over 30 miles from the Chesapeake Bay, Washington is famous for its oysters and lump crab cakes, both of which, as generations of politicos have discovered, offer the perfect solution to hunger pangs during a late night debate.</Description>
+        </Destination>
+      </Destinations>
+    </Country>
+    <Country Name="China" Slug="china" IsoCode="CN">
+      <Destinations>
+        <Destination Featured="3" Name="Beijing" Slug="beijing">
+          <Description>Beijing is one of those wonderful cities that manages to combine the historic with the modern, and pull off both with aplomb. The billions of dollars worth of renovations that resulted from being awarded the 2008 Olympics Games have transformed what some felt was dowdy backwater of a city into a modern metropolis any country would be proud of.
+
+Beijing is now blessed with top-quality hotels and restaurants, a world-class subway system - set to become the world's biggest by 2015 - and some of the most eye-catching and modern architecture on the planet.
+
+Yet beyond the modernity, this ancient city can still offer an incredible number of historic attractions, including its remarkable network of hutong alleyways, which provide a unique village-within-a-city atmosphere of slow-paced living and timeless charms. Beijing is also the country's most convenient la</Description>
+        </Destination>
+        <Destination Featured="2" Name="Guilin" Slug="guilin">
+          <Description>Guilin - located in the Guangxi Zhuang Autonomous Region in the southeast of China - is renowned for its unique karst landscapes and bounteous opportunity for outdoor pursuits. Biju Sukumaran explores Guilin’s awe-inspiring Yangshuo County by cycle, raft and on foot in an unforgettable journey.
+
+I'm cycling with my friends along the roads outside of Yangshuo. The wind lashes through the countryside, across the fields of osmanthus blossoms that are iconic to Guilin. Tour buses and cars weave along the wide roads, and they, combined with the wind and the gloriously pristine scenery, seem to propel us to race furiously against one another on our rented bikes. We whizz past roadside restaurants selling everything from duck to dog, past villagers carefully putting out row upon row of persimmon fruits to dry in the midday sun. I feel like I am finally beginning to see the China depicted in the innumerable television shows and documentaries of my childhood.
+
+### Unique Limeston Hills
+
+Located in Guangxi Province in southern China, close to the border with Vietnam, Yangshuo is renowned for its pristine, karst-studded landscape. A popular getaway for Chinese tourists, the area is one of the best places to enjoy the great outdoors in China. Its unique limestone hills are the reason why the province is one of China's premier areas for climbing. Several companies such as Terratribes Expeditions and Karst Climber provide transportation and information on everything from where to purchase equipment to the route you should attempt.
+
+There are hundreds of routes for all abilities. The geological formations sometimes take on unusual shapes, like Moon Hill, a bridge-like karst with a circular gap, which offers spectacular views and difficult overhangs, while others, like the White Mountain, contain more challenging terrain for veteran climbers.
+
+I’m not here for the climbing but for more sedate activities. We enter Yangshuo and head for The Lazy Men's hostel, its walls crowded with pictures of guests and trip itineraries. My Chinese friend immediately strikes up a conversation with the owner, who advises us to rent bicycles from a shop just a few metres down the road. Virtually every street corner has an outdoor bike shop with rentals available by the hour or by the day. We arrange a rafting trip for the following day.
+
+### Rafting the Li River
+
+The next morning, we cycle for about an hour to a small village beside the Li River where we meet our rafting guides. Our bicycles are efficiently loaded into a truck and whisked away. We are provided with two small bamboo rafts that seat two people, and we spend the better part of the day leisurely floating down the river propelled by our guides, stopping to navigate the locks en route. Our guides chat amiably to each other, sometimes telling jokes, sometimes racing each other, never tiring in their endeavours.
+
+I ask to try to navigate the rafts, using the long bamboo stick to push off from the shallow riverbed, but it’s more difficult than it seems and my guide soon laughingly resumes poling as we careen off course. The water is clear and cool, as is the air; we're surrounded by karsts and greenery and, away from the crowds of modern China, an overwhelming sense of peace and freedom prevails.
+
+
+Among the rice paddies, our guides point out some of the many unusual formations in the karsts and hills around us. These include The Mountain of Splendid Hues with its many-coloured rocks, and the Elephant Trunk Hill, with a half-moon opening worn by the river to make a shape reminiscent of a trunk. Along the way we see the Yellow Cloth Shoal, its shallow riverbed like a yellow sheet, and we stop to explore Xingping Town, an old yet picturesque village built with sturdy grey stones, a remnant of its original function as a fortification over 500 years ago.
+
+Continuing on, we ignore the option of grabbing a bite to eat on one of the floating restaurants but pause to take pictures of the stunning backdrops, one made especially famous by appearing on the back of the 20 yuan note. Here, sequences of karsts march into the distance, reflected clearly on the placid river in the foreground, winding past, then through the hills on into the distance.
+
+Back in the town, we explore by taking a quiet river walk with small bars, clubs, and restaurants. Street markets selling handmade crafts abound as the day fades, the streets becomes alive with revellers. Club music thumps out of speakers as we pass crowded pubs, but hungry, we ignore them and cross small bridges to access further parts of the river walk. We pass an Indian restaurant, then an Italian pizzeria, but the lederhosen uniforms of the German beer garden attract us the most.
+
+### Luminous Caveas
+
+The next morning we awake early, and cross to one of the many places selling the local specialty - Yangshuo rice noodles. The noodles are cheap, fast, and served with pickled condiments, their warmth a welcome relief from a long day of outdoor activity, or in our case, a night of revelry.
+
+We've booked a tour to visit one of the many caves on the outskirts of town. The caves are all filled with unique geological formations, stalagmites and stalactites that form eerie shapes, highlighted by the glow of multicoloured floodlights. The tour guides and pamphlets ascribe colourful names to each and every shape.
+
+"Can you see the three dragons in this pillar?" one says.
+
+None of us can, but the displays do not fail to impress. Each cave has a speciality – some contain rivers and have portions that must be explored via boat, while others use elevators and trams.  We spend several hours walking through Silver Cave, featuring high ceilings, some several stories tall, and shining walls. Formations like the Screen of Music, the Buddha Discussing the Buddhist Sutras, and the Solitary Pillar Propping up the Sky, are all accentuated by shadows and light. Lost in a warren of fluted rock and climbing paths, we finally emerge from the cave, blinking blearily in the sun, to the tune of street merchants selling trinkets.
+
+### Theatre of Dreams
+
+Later that evening, after a meal of Yangshuo beer fish (a slightly sweet preparation of fish braised in beer with vegetables, peppers, and garlic) we're off to the theatre to see Impression Liu Sanjia, showcasing the songs and costumes of the many ethnic minority groups indigenous to the area.
+
+The awe-inspiring natural setting forms a backdrop to the drama;  the stage is composed of the Li River and its banks in the foreground, while in the background, gigantic coloured lights illuminate several karsts. A grand performance is expected; Yimou Zhuang, director of the spectacular opening ceremony of the 2008 Beijing Olympics, choreographed it.
+
+The singing begins as hundreds of male performers dressed in traditional regalia sing an old love song to their female counterparts on the opposite bank.
+
+Listening intently whilst shivering slightly in the crisp, cool air and with my stomach filled with local cuisine, I am, for the moment, completely sated.</Description>
+        </Destination>
+        <Destination Featured="2" Name="Hong Kong" Slug="hong-kong">
+          <Description>Hong Kong can be one of the most engaging and unexpectedly beautiful urban spectacles on earth.
+
+Situated at the mouth of the Pearl River Delta on the southwestern coast of China, Hong Kong is a destination imbued with a remarkable mix of Eastern and Western influences. Since the handover from British colonial to Chinese sovereignty in 1997, it has become far more Chinese than ever before, but for tourists the joy of visiting lies in being wedged between two diverse cultures simultaneously.
+
+Hong Kong Island with its financial hub is the energetic heartbeat of the region, where cloud-tickling skyscrapers, neon extravagance, fine dining, high-end shopping and world-class hotels are all part of the landscape. It promotes itself as “Asia’s world city” and indeed, its eclectic cityscape gives it a vibrancy and dynamism that is quite unique for this part of the world.
+
+Get down to street level however and the laneways, wet markets and traditional Chinese haunts are a reminder that beyond the city lies a working class populace still making ends meet the old way - and often the hard way.
+
+Much has changed since 1841 when then British foreign secretary Lord Palmerston described Hong Kong as ‘nothing but a barren island without a house upon it'. From a collection of small fishing villages, Hong Kong has transformed itself into one of the world’s most cosmopolitan and exciting cities whilst still retaining the beauty of its natural surroundings.
+
+The iconic Victoria Harbour has been key to the development of the territory as a trading port and entry point into China. Old colonial monuments can still be found such as the statue of Queen Victoria in Victoria Park, Murray Building in Stanley and in Central’s Statue Square. Modern day equivalents dot the famous skyline such as the Bank of China Building, HSBC Building and the International Finance Centre (IFC). Meanwhile, modern attractions such as Madam Tussauds waxwork museum and Hong Kong Disneyland enhance its appeal to new generations of global visitors.
+
+Hong Kong’s unique fusion of East and West, traditional and contemporary makes it one of Asia’s top travel destinations – and this is no more reflected than in the diversity of cuisine on the island. Whether you’re heading for its infamous street market stalls or a renowned restaurant, innovation and fusion flavours are the region’s hallmarks – try dishes mixing Chinese, Japanese and Thai, traditional dim sum or sampan-style seafood usually favoured by fishermen. Even better, why not try rustling up your own creations with a cookery class or workshop?
+
+In addition to gastronomy, shopping and nightlife are top notch in Hong Kong. And while its urban attractions are well renowned, few people know of the alluring plethora of natural distractions, which include miles of golden, deserted beaches, volcanic landscapes, pristine woodlands, sleepy islands, protected marine parks and nature reserves.
+
+With its heady mix of urban and rural, modern and traditional, Hong Kong truly is a destination to experience. For a small Asian city, it packs in some seriously big punches.</Description>
+        </Destination>
+        <Destination Featured="3" Name="Shanghai" Slug="shanghai">
+          <Description>Shanghai is the future all other Chinese cities aspire to reach. Forget creaking temples and dusty old palaces (there are plenty of them elsewhere); Shanghai is where people come to see modern China at its glimmering best.
+
+This fast-paced city of towering skyscrapers is, in fact, not without its own significant history. Its glory days of the 1930s helped build Shanghai's reputation as a City of Sin. But to pause for too long at the city's past would be missing the point: Shanghai is all about the future face of the world's future super power, and coming here is to witness what makes the business end of China tick.
+
+Perhaps best visited at the end of your trip to China, Shanghai offers history-tired tourists the chance to dine at glitzy restaurants, wine at funky cocktail bars and shop inside dazzling malls before resting up in the country's most impressive hotels.</Description>
+        </Destination>
+      </Destinations>
+    </Country>
+  </Countries>
+</TravelSeedData>

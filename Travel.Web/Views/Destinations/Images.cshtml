@@ -1,0 +1,177 @@
+﻿@model Travel.Web.Models.Destination
+
+@Html.AdminBreadcrumbs("Images (" + @Model.Name + ")", "Destinations", "AdminDestinationsHome");
+
+
+<header class="row admin-header">
+    <h2>@Model.Name</h2>
+</header>
+
+<div class="row">
+
+    <div class="small-12 columns">
+
+
+        <form id="fileupload" action="/Upload/UploadHandler" method="post" enctype="multipart/form-data">
+
+            
+            @Html.Hidden("objectContext", @Model.Id)
+
+            @Html.Hidden("uploadEndpoint", @Url.RouteUrl("UploadEndpoint"))
+
+
+            <div class="row fileupload-buttonbar">
+                <div class="medium-7 columns">                    
+                    
+                    <span class="fileinput-button">                        
+                        <input type="file" name="files[]" multiple style="background-color: white;">
+                    </span>
+
+                    <button type="submit" class="button success start">
+                        <i class="icon-upload"></i>
+                        <span>Start upload</span>
+                    </button>
+                    <button type="reset" class="button warning cancel">
+                        <i class="icon-prohibited"></i>
+                        <span>Cancel upload</span>
+                    </button>
+                    <button type="button" class="button alert delete" >
+                        <i class="icon-delete"></i>
+                        <span>Delete</span>
+                    </button>
+                    <input type="checkbox" class="toggle">
+                   
+                    <span class="fileupload-loading"></span>
+
+                </div>
+                
+
+
+                <div class="medium-5 columns fileupload-progress fade">
+
+                    <!-- The global progress bar -->
+                    <div class="progress success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                        <div class="bar" style="width:0;"></div>
+                    </div>
+
+                    <!-- The extended global progress information -->
+                    <div class="progress-extended">&nbsp;</div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+
+                <table role="presentation" class="small-12 columns"><tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody></table>
+            </div>
+        </form>
+
+
+        @Html.BackLink("Destinations", "AdminDestinationsHome")
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- The template to display files available for upload -->
+<script id="template-upload" type="text/x-tmpl">
+    {% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-upload fade">
+        <td>
+            <span class="preview"></span>
+        </td>
+        <td>
+            <p class="name">{%=file.name%}</p>
+            {% if (file.error) { %}
+            <div><span class="label label-important">Error</span> {%=file.error%}</div>
+            {% } %}
+        </td>
+        <td>
+            <p class="size">{%=o.formatFileSize(file.size)%}</p>
+            {% if (!o.files.error) { %}
+            <div class="progress success active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" style="width:0;"></div></div>
+            {% } %}
+        </td>
+        <td>
+            {% if (!o.files.error && !i && !o.options.autoUpload) { %}
+            <button class="button primary start">
+                <i class="icon-upload"></i>
+                <span>Start</span>
+            </button>
+            {% } %}
+            {% if (!i) { %}
+            <button class="button warning cancel">
+                <i class="icon-prohibited"></i>
+                <span>Cancel</span>
+            </button>
+            {% } %}
+        </td>
+    </tr>
+    {% } %}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The template to display files available for download -->
+<script id="template-download" type="text/x-tmpl">
+    {% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-download fade">
+        <td>
+            <span class="preview">
+                {% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" data-gallery="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}
+            </span>
+        </td>
+        <td>
+            <p class="name">
+                <a href="{%=file.url%}" title="{%=file.name%}" data-gallery="{%=file.thumbnail_url&&'gallery'%}" download="{%=file.name%}">{%=file.name%}</a>
+            </p>
+            {% if (file.error) { %}
+            <div><span class="label label-important">Error</span> {%=file.error%}</div>
+            {% } %}
+        </td>
+        <td>
+            <span class="size">{%=o.formatFileSize(file.size)%}</span>
+        </td>
+        <td>
+            <button class="button alert delete"  data-type="{%=file.delete_type%}" data-url="{%=file.delete_url%}" {% if (file.delete_with_credentials) { %} data-xhr-fields='{"withCredentials":true}' {% } %}>
+                <i class="icon-delete"></i>
+                <span>Delete</span>
+            </button>
+            <input type="checkbox" name="delete" value="1" class="toggle">
+        </td>
+    </tr>
+    {% } %}
+</script>
+
+
+
+
+@section Scripts {
+
+    @* jquery.FileUpload *@
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/upload")
+}
+

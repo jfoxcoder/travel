@@ -1,0 +1,63 @@
+﻿@model Travel.Web.ViewModels.HomeVm
+
+
+@section Styles {
+    @Styles.Render("~/Content/Maximage/jquery.maximage.min.css")    
+}
+
+    <div class="slideshow-label hide-for-medium-down hide"></div>
+
+    <div class="row topbar-gap">
+
+        <ul id="destinations"
+            class="small-block-grid-1 medium-block-grid-3"
+            wish-btn-owner>
+
+            @Html.Partial("~/Views/Shared/_Destinations.cshtml", @Model.Query)
+
+        </ul>
+    </div>
+
+
+
+    <div class="row push-footer-down">
+        @* patch: data-url is now hard coded because @Url.RouteUrl("Countries") was returning
+            an empty string on the Countries route/DestinationsByCountry.*@
+        <div class="small-3 small-centered columns">
+            <a id="load-btn" class="button large radius primary" data-url="/load-destinations">Load More  <i class="icon-download"></i></a>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+    var Travel = @Html.Raw(@Json.Encode(@Model.ClientData));
+</script>
+
+@* sorting, paging and filter values *@
+<input type="hidden" id="country-val" value="@Model.CountryFilterValue" />
+<input type="hidden" id="sort-val" name="sort" value="@Model.SortsVm.ActiveSortName" />
+<input type="hidden" id="page-val" value="@Model.PagerVm.Pager.Info.PageNumber" />
+
+<div id="maximage">
+    <img src="@Url.Content("~/Content/images/showcase/1.jpg")" />
+    <img src="@Url.Content("~/Content/images/showcase/2.jpg")" />
+    <img src="@Url.Content("~/Content/images/showcase/3.jpg")" />
+    <img src="@Url.Content("~/Content/images/showcase/4.jpg")" />
+    <img src="@Url.Content("~/Content/images/showcase/5.jpg")" />
+    <img src="@Url.Content("~/Content/images/showcase/6.jpg")" />
+    <img src="@Url.Content("~/Content/images/showcase/7.jpg")" />
+    <img src="@Url.Content("~/Content/images/showcase/8.jpg")" />
+    <img src="@Url.Content("~/Content/images/showcase/9.jpg")" />
+</div>
+
+
+@section Scripts {
+    
+    @Scripts.Render("~/bundles/maximage")
+    @Scripts.Render("~/Scripts/joseph/destination-list.js")
+    @Scripts.Render("~/Scripts/joseph/wishlist.js")
+}
+

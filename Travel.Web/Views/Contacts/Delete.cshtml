@@ -1,0 +1,24 @@
+﻿@model Travel.Web.Models.Contact
+
+<div class="row topbar-gap ">
+    <div class="small-12 columns">
+        <h3>Delete Message</h3>
+    </div>
+</div>
+
+<div class="row push-footer-down">
+    <div class="small-12 columns">
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Confirm Delete" class="button alert"  />
+                
+            </div>
+        }
+    </div>
+
+    <div class="small-12 columns">
+        @Html.RouteLink("Back to contacts", "AdminContactsHome")
+    </div>
+</div>

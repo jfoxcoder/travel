@@ -1,0 +1,38 @@
+﻿@model Travel.Web.ViewModels.DestinationVm
+
+@section styles {
+    @* slick slider replaced with maximage for fullscreen slideshow effect  *@
+    @*@Styles.Render("~/Content/carousel")*@
+    @Styles.Render("~/Content/Maximage/jquery.maximage.min.css")
+}
+<div class="row push-footer-down text-over-transparent topbar-gap">
+   
+        <article class="destination-view" data-destination="@Model.Id">
+            <header class="row">
+                <div class="small-11 columns"><h2>@Model.Name</h2></div>
+                <div class="small-1 columns">@Html.WishlistButton(@Model)</div>
+            </header>
+
+            <section class="row">
+                <div class="small-12 columns">
+                    <div class="markdown">@Html.Markdown(@Model.Description)</div>
+                    <div></div>
+                </div>
+            </section>
+        </article>
+    
+</div>
+
+<div id="maximage">
+    @Html.Action("DestinationSlideshowImages", new { destinationId = @Model.Destination.Id })
+</div>
+
+<script>
+    // temp patch to fix wishlist issues...
+    var Travel = { pageConfig: 1, country: "", isWishlistPage: false };
+</script>
+
+@section scripts {  
+    @Scripts.Render("~/bundles/maximage")
+    @Scripts.Render("~/Scripts/joseph/wishlist.js")
+}

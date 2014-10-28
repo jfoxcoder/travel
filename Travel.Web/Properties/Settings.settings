@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Travel.Web.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebsiteName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Travel Kiwi</Value>
+    </Setting>
+    <Setting Name="DestinationImageVirtualRootDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/Content/Images/Destinations</Value>
+    </Setting>
+    <Setting Name="DefaultDestinationTake" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
+    <Setting Name="DestinationThumbVirtualRootDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/Content/Images/Destinations/_Thumbs</Value>
+    </Setting>
+    <Setting Name="ImagePlaceholderPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/Content/Images/Placeholders/image-placeholder.gif</Value>
+    </Setting>
+    <Setting Name="ThumbPlaceholderPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/Content/Images/Placeholders/thumb-placeholder.jpg</Value>
+    </Setting>
+    <Setting Name="AllowedImageExtensions" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">jpg jpeg png</Value>
+    </Setting>
+    <Setting Name="ImagePhysicalRootDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Dropbox\dev\vsproj\Travel\Travel.Web\Content\images\destinations</Value>
+    </Setting>
+    <Setting Name="ThumbPhysicalRootDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Dropbox\dev\vsproj\Travel\Travel.Web\Content\images\destinations\_Thumbs</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

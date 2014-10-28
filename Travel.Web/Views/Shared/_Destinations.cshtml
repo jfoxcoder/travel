@@ -1,0 +1,47 @@
+﻿@model Travel.Web.Queries.DestinationQuery
+
+@*@model IEnumerable<Travel.Web.ViewModels.DestinationVm>*@
+
+@using Travel.Web.Enums;
+
+
+@{
+    string lastPageClass = Model.Pager.Info.IsLastPage ? "last-page" : null;
+}
+
+@foreach (var dvm in @Model.DestinationVms)
+{
+    <li class="@lastPageClass">
+        <article class="destination @dvm.InWishlistClass "
+                 data-destination="@dvm.Id" data-name="@dvm.Name"
+                 @*data-url="@Html.DestinationUrl(dvm)"*@
+                 data-slideshow-url="@Url.RouteUrl("DestinationSlideshowImages", new { destinationId = dvm.Id})">
+            <header>
+                <img src="@Html.DestinationImageUrl(dvm, ImageType.Thumb)"
+                     class="destination-image"
+                     alt="@dvm.Name" />
+            </header>
+            <section>
+                <div class="row destination-title-area">
+                    <div class="small-10 columns">
+                        <i class="@dvm.FlagClass has-tip tip-left" title="@dvm.Destination.Country.Name"></i>
+                        <h3>@dvm.Name</h3>
+                    </div>
+                    <div class="small-2 columns">@Html.WishlistButton(dvm)</div>
+                </div>
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <p class="description-excerpt">@Html.Raw(@dvm.DescriptionExcerpt)</p>
+
+                        <a class="moreLink" href="@Html.DestinationUrl(dvm)" title="@dvm.Name »">
+                            <i class="icon-airplane"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+            </section>
+        </article>
+    </li>
+}

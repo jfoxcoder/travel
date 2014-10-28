@@ -1,0 +1,137 @@
+﻿@model Travel.Web.Models.Contact
+
+@using Travel.Web.ViewModels;
+
+@{
+    var layoutVm = ViewBag.LayoutVm as LayoutVm;
+}
+@{
+    var name = "";
+    var email = "";    
+    
+    // Auto-fill the name and email of registered users.
+    if (User.Identity.IsAuthenticated)
+    {        
+        email = User.Identity.Name;
+        int at = email.IndexOf('@');
+        if (at > 0)
+        {
+            name = email[0].ToString().ToUpper() + email.Substring(1, at- 1);            
+        }
+    }   
+}
+
+
+
+<div class="row push-footer-down topbar-gap">
+    <div class="medium-5 columns">
+        @using (Html.BeginRouteForm("CreateContact", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row">
+               
+                <h4>Contact</h4>
+
+            
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "alert" })
+            </div>
+
+            <div class="row">
+                <div class="columns">
+                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "" })
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "", @Value = name, @autofocus = "autofocus" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "alert" })
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="columns">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "" })
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "", @Value = email } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "alert" })
+            </div>
+        </div>
+
+
+            <div class="row">
+                <div class="columns">
+                    @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "" })
+                    @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "" } })
+                    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "alert" })
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="columns">
+                    @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "" })
+                    @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "" } })
+                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "alert" })
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="small-6 columns" >
+                    <input id="send-btn" type="submit" value="Send" class="button success expand" />                    
+                </div>
+                <div class="small-6 columns">
+                    <span id="add-test-data-btn" class="button warning expand" style="opacity: .5;">Add Test Data</span>
+                </div>
+
+                
+                
+            </div>
+        }
+    </div>
+
+    <div class="medium-7  columns">
+
+        <!-- header -->
+        <div class="row">
+            <h4>Address</h4>
+            <hr />            
+        </div>
+        
+        <!-- Phone -->
+        <div class="row">
+            <address class="small-6 columns">
+                <div><strong>Free Phone</strong><span>0800 555-1234</span></div>
+                <div><strong>Phone</strong><span>+64 3-377 2364</span></div>
+                <div><strong>Fax</strong><span>+64 3-377 2365</span></div>
+            </address>
+            <address class="small-6 columns text-right">
+                <div>334 Manchester St</div>
+                <div>Christchurch 8013</div>
+                <div>New Zealand</div>
+            </address>
+        </div>
+
+        <!-- Map and Address -->
+        <div class="row" style="margin-top: 30px;">
+
+            <!-- Map -->
+            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="margin: auto; overflow:hidden;height:500px;width:90%;"><div id="gmap_canvas" style="height:500px;width:600px;"></div>
+            <style>
+                #gmap_canvas img {
+                    max-width: none !important;
+                    background: none !important;
+                }
+            </style><a class="google-map-code" href="http://www.mapsembed.com" id="get-map-data">mapsembed.com</a></div>
+            <script type="text/javascript"> function init_map() { var myOptions = { zoom: 14, center: new google.maps.LatLng(-43.5224331, 172.64011860000005), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(-43.5224331, 172.64011860000005) }); infowindow = new google.maps.InfoWindow({ content: "<b>@layoutVm.WebsiteName</b><br/>334 Manchester St<br/> Christchurch" }); google.maps.event.addListener(marker, "click", function () { infowindow.open(map, marker); }); } google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+
+@section scripts {
+    @* this just adds test data on click*@
+    @Scripts.Render("~/Scripts/joseph/contact-form.js")
+}

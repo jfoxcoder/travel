@@ -1,0 +1,19 @@
+﻿.test-link {
+	position: relative;
+	top: 10px;
+	left: 0;
+	margin: auto;
+    $color: indianred;
+	$dark-color: darken($color, 20%);
+	color: white;
+	background-color: $color;
+	font-size: small !important;
+	padding: 4px 8px;
+	font-family: consolas, 'Courier New', monospace;
+	cursor: pointer;
+
+	
+	
+}
+
+
